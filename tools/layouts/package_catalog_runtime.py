@@ -301,6 +301,8 @@ def main():
              'tests/compare_catalog.py', 'tests/run_catalog_wasm.cjs',
              bundle['profile_spec_path'], bundle['inventory_path']]
     names += ['browser/' + name for name in ('layout-codec.js', 'layout-runtime.js', 'layout-worker.js', 'contracts.js', 'dependencies.js')]
+    if mig_files:
+        names.append('notices/MIG-NOTICES.txt')
     inputs = {str((HERE / name).relative_to(PROJECT_ROOT)): digest((HERE / name).read_bytes()) for name in names}
     for path in (HERE.parent / 'paths.py', HERE.parent / 'codec.py'):
         inputs[str(path.relative_to(PROJECT_ROOT))] = digest(path.read_bytes())
@@ -326,6 +328,7 @@ def main():
         shutil.copytree(args.notices, stage / 'licenses')
         if mig_files:
             (stage / 'licenses/MIG-APPLE_LICENSE.txt').write_bytes(mig_files['MIG-APPLE_LICENSE.txt'])
+            shutil.copyfile(HERE / 'notices/MIG-NOTICES.txt', stage / 'licenses/MIG-NOTICES.txt')
         if ubc is not None:
             (stage / 'licenses/TrustCache-APPLE_LICENSE.txt').write_bytes(ubc_files['TRUSTCACHE-APPLE_LICENSE.txt'])
         for path, name in ((SOURCE_ROOT / 'APPLE_LICENSE', 'XNU-APPLE_LICENSE.txt'),
