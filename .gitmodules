@@ -1,0 +1,6 @@
+[submodule "xnu"]
+	path = xnu
+	url = https://github.com/apple-oss-distributions/xnu.git
+[submodule "bootstrap_cmds"]
+	path = bootstrap_cmds
+	url = https://github.com/markmentovai/bootstrap_cmds.git

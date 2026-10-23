@@ -1,0 +1,38 @@
+{
+  "repository": "https://github.com/apple-oss-distributions/xnu",
+  "tag": "xnu-8796.101.5",
+  "commit": "aca3beaa3dfbd42498b42c5e5ce20a938e6554e5",
+  "files": {
+    "API.h": {
+      "source_path": "EXTERNAL_HEADERS/TrustCache/API.h",
+      "sha256": "a8e2994a5b6ec61e3aaab6516d82041f629322a76bb4ee1339a172aaea14417a",
+      "bytes": 6632
+    },
+    "APPLE_LICENSE": {
+      "source_path": "APPLE_LICENSE",
+      "sha256": "e5881019d8766c1e88a5fe1dbca4ba40c78011d41fcb18f6e9f50df60182685b",
+      "bytes": 19829
+    },
+    "RawTypes.h": {
+      "source_path": "EXTERNAL_HEADERS/TrustCache/RawTypes.h",
+      "sha256": "03e945ba48a3b3400012d42fc1b97fb70bc59835985c2921e8173369e40301bf",
+      "bytes": 2490
+    },
+    "Return.h": {
+      "source_path": "EXTERNAL_HEADERS/TrustCache/Return.h",
+      "sha256": "d15cae97bb0c7cfa690b6ffa71805c7aa0c774e7c0bd23095d6684f564674b44",
+      "bytes": 3589
+    },
+    "Types.h": {
+      "source_path": "EXTERNAL_HEADERS/TrustCache/Types.h",
+      "sha256": "68f179189fb0f5e37f6898c8a0daa80e44b4a05c5a7834e4ae68e05f1ef99c4a",
+      "bytes": 11720
+    },
+    "TypesConfig.h": {
+      "source_path": "EXTERNAL_HEADERS/TrustCache/TypesConfig.h",
+      "sha256": "bb46daeff6efe7a7bc701741cbc73690b3ee5036aeac7096cbf269b751f0d1d3",
+      "bytes": 10421
+    }
+  },
+  "note": "Unmodified older Apple-published external headers; not current SDK or shipped ABI."
+}

@@ -1,0 +1,5 @@
+/.docs-cache/
+/dist/
+/.private/
+__pycache__/
+*.py[cod]
